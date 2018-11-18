@@ -1,5 +1,7 @@
 class ImagesList {
-    constructor ({source, parentElementSelector=".images-list-placeholder"}){
+    constructor ({
+        source=[],
+        parentElementSelector=".images-list-placeholder"} = {}){
         this.parentElement = document.querySelector(parentElementSelector);
         this.source = source;
         this.init();
